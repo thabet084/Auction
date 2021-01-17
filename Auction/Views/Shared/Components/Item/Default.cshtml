@@ -1,0 +1,34 @@
+﻿
+<div>
+
+    <div id="divAllAnswers">
+        <div class="form-group">
+
+            <input id="itemName" maxlength="100" type="text" required="required" class="form-control" placeholder="Item Name :" />
+        </div>
+        <div class="form-group">
+
+            <input id="itemPrice" maxlength="100" type="number" required="required" class="form-control" placeholder="Price :" />
+        </div>
+
+
+        <a id="btnAddItem" class="btn btn-success "> Add</a>
+        <div style="color:red" id="errorItemNamePriceRequired">You should fill name with price</div>
+    </div>
+
+
+
+    <div id="div_Items">
+        <partial name="_Items" model="Model" />
+    </div>
+
+</div>
+
+
+
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+
+  
+
+  
+

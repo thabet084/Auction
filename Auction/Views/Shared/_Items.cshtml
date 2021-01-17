@@ -1,0 +1,42 @@
+﻿@model List<Auction.Services.ViewModels.ItemViewModel>
+
+
+
+
+@if (Model.Count>0)
+{
+    <div id="tblItems">
+
+
+        <table  class="table table-bordered" style="width:100%">
+            <tbody>
+
+
+                @{
+                    
+                    foreach (var item in Model)
+                    {
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        &nbsp;<span>@item.Name</span>
+
+                                    </td>
+                                    <td style="padding-bottom: 15px;">
+                                        &nbsp;<span>@item.Price </span> USD
+
+                                    </td>
+                                </tr>
+                        
+                    }
+                }
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+}
+
+
